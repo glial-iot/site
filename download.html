@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Glial: Generic Logic for Interconnection and Adaptation Layers</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<!-- css -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="css/flexslider.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>Glial: Generic Logic for Interconnection and Adaptation Layers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-	(function (m, e, t, r, i, k, a) {
-	m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-		m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-	})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-	ym(52086813, "init", {
-		id: 52086813,
-		clickmap: true,
-		trackLinks: true,
-		accurateTrackBounce: true,
-		webvisor: true
-	});
-</script>
-<noscript>
-	<div><img src="https://mc.yandex.ru/watch/52086813" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
+        ym(94223642, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/94223642" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
 </head>
 <body>
 <div id="wrapper" class="home-page">
-	<!-- start header -->
-	<header>
+    <!-- start header -->
+    <header>
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -56,35 +62,38 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-						<li><a class="waves-effect waves-dark" href="index.html">Main</a></li>
-						<li class="active"><a class="waves-effect waves-dark" href="download.html">Download</a></li>
-						<li><a class="waves-effect waves-dark" href="support.html">Support</a></li>
-						<li><a class="waves-effect waves-dark" href="/docs/">Documentation</a></li>
+                        <li><a class="waves-effect waves-dark" href="index.html">Main</a></li>
+                        <li class="active"><a class="waves-effect waves-dark" href="download.html">Download</a></li>
+                        <li><a class="waves-effect waves-dark" href="support.html">Support</a></li>
+                        <li><a class="waves-effect waves-dark" href="/docs/">Documentation</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-	</header>
-	<!-- end header -->
-	<section id="banner">
+    </header>
+    <!-- end header -->
+    <section id="banner">
 
-	</section>
-	<section id="content">
-	<div class="container">
-	    	<div class="row">
-			<div class="col-md-12">
-				<div>
-					<h2 class="aligncenter">Download and install Glial</h2>
-					We currently support Debian operating system and <b>amd64</b> and <b>armhf</b> architectures.<br />
-					If you need to run Glial on platforms other than those listed, we recommend that you write to <b>support@glial.pro</b> for
-					assistance.<br />
-					<br />
-					To install Glial on Debian, one command is enough:<br />
-					<pre><code>wget -q -O - https://raw.githubusercontent.com/glial-iot/glial/master/install_glial_stable.sh | sudo bash</code></pre><br />
-					<br />
-					<br />
-					Or, if you prefer not to run unknown scripts as root:<br />
-					<pre><code>apt-get install -y gnupg curl debian-archive-keyring apt-transport-https
+    </section>
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h2 class="aligncenter">Download and install Glial</h2>
+                        We currently support Debian operating system and <b>amd64</b> and <b>armhf</b>
+                        architectures.<br/>
+                        If you need to run Glial on platforms other than those listed, we recommend that you write to
+                        <b>support@glial.ru</b> for
+                        assistance.<br/>
+                        <br/>
+                        To install Glial on Debian, one command is enough:<br/>
+                        <pre><code>wget -q -O - https://raw.githubusercontent.com/glial-iot/glial/master/install_glial_stable.sh | sudo bash</code></pre>
+                        <br/>
+                        <br/>
+                        <br/>
+                        Or, if you prefer not to run unknown scripts as root:<br/>
+                        <pre><code>apt-get install -y gnupg curl debian-archive-keyring apt-transport-https
 apt-get update
 release=`lsb_release -c -s`
 echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" > /etc/apt/sources.list.d/tarantool_1_10.list
@@ -94,67 +103,64 @@ echo "deb http://glial-iot.github.io/glial-stable stretch main" > /etc/apt/sourc
 curl -L "https://glial-iot.github.io/glial-stable/PUBLIC.KEY" | apt-key add -
 apt-get update
 apt-get install -y glial</code></pre>
-					<h2 class="aligncenter">Run Glial as a Docker container</h2>
-					Glial container is available at Docker Hub.
-					To launch Glial, just pull the container from Docker Hub and run it:<br>
-					<pre><code>docker pull glial/glial
+                        <h2 class="aligncenter">Run Glial as a Docker container</h2>
+                        Glial container is available at Docker Hub.
+                        To launch Glial, just pull the container from Docker Hub and run it:<br>
+                        <pre><code>docker pull glial/glial
 docker run -p 8888:8080 -td glial/glial</code></pre>
-					Voila, you've got a running Glial instance on 8888 port.
-				</div>
-				<br/>
-			</div>
-		</div>
-	</div>
-	</section>
+                        Voila, you've got a running Glial instance on 8888 port.
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="section-padding gray-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>Nokia IoT Laboratory</h2>
-						<p>IoT Laboratory — Nokia's regional incubation initiative for IoT in Eastern Europe</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
+    <section class="section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2>Nokia IoT Laboratory</h2>
+                        <p>IoT Laboratory — Nokia's regional incubation initiative for IoT in Eastern Europe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-
-
-	<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="widget">
-					<h5 class="widgetheading">Our Contact</h5>
-					<address>
-					<strong>Nokia IoT Laboratory</strong><br>
-					Russia, Moscow, Skolkovo, Malevicha, 1, 3rd floor, room 1</address>
-					<p>
-						<i class="icon-envelope-alt"></i> info@glial.pro
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							<span>2018-2019 &copy; Nokia IoT Laboratory. All right reserved.</span>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="widget">
+                        <h5 class="widgetheading">Our Contact</h5>
+                        <address>
+                            <strong>Nokia IoT Laboratory</strong><br>
+                            Russia, Moscow, Skolkovo, Malevicha, 1, 3rd floor, room 1
+                        </address>
+                        <p>
+                            <i class="icon-envelope-alt"></i> info@glial.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>
+                                <span>2018-2022 &copy; Nokia IoT Laboratory. All right reserved.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 <a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
